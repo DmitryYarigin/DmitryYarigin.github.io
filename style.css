@@ -107,6 +107,9 @@ header p{
   color: white;
   padding-right:10px;
 }
+.englishflag{
+  margin-right: 20px;
+}
 .treugol{
     margin-top: 14px;
     margin-left: -20px;
@@ -496,9 +499,7 @@ h2{
   .downHeader{
     padding-bottom: 0;
   }
-  .englishflag{
-    margin-right: 20px;
-  }
+
   .treugol{
     margin-right: 5px;
   }
