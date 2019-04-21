@@ -367,7 +367,7 @@ h2{
   width: 50%;
   text-align: left;
   padding: 85px 0 0 25px;}
-.content5 .leftSide2{
+.leftSide2{
   position:relative;
 }
 .rectblue{
@@ -375,6 +375,7 @@ h2{
   height: auto;
   position: absolute;
   bottom: 100px;
+  left: 0;
 }
 
 .content5 h2,.content5 h3,.content5 p{
