@@ -89,7 +89,7 @@ header p{
 }
 
 .links{
-  min-width: 100px;
+  min-width: 140px;
   max-width: 700px;
 }
 .links ul{
@@ -106,6 +106,9 @@ header p{
   text-decoration: none;
   color: white;
   padding-right:10px;
+}
+.links [type="checkbox"]{
+  display: none;
 }
 .englishflag{
   margin-right: 20px;
@@ -489,14 +492,19 @@ h2{
   .content5{
     min-height: 100%;
   }
-  .links li:nth-child(-n+5) {
-    display: none;
-  }
+
   .links ul{
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .links a{
+    font-size: 0.8em;
+    padding:0 3px 0 1px;
+    border-right: 2px solid white;
+  }
+
+
   .downHeader{
     padding-bottom: 0;
   }
@@ -526,4 +534,34 @@ h2{
   .content7 h2{
     padding-top: 20px;
   }
+}
+@media (max-width: 520px) {
+  .links{
+    text-align: center;
+  }
+  .links a{
+    display: block;
+    border: 2px solid white;
+    text-align: center;
+
+  }
+  .links ul{
+    position: absolute;
+    display: none;}
+  .treugol{
+    margin-top: 0px;
+    margin-left: 32px;
+  }
+  .links img{
+    margin-top:-22px;
+    position: relative;
+    cursor: pointer;
+  }
+  input.toggleMenu:checked + label.toggleMenu{
+  }
+
+  input.toggleMenu:checked ~ ul{
+    display: block;
+  }
+
 }
