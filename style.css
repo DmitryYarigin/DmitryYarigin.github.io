@@ -89,8 +89,16 @@ header p{
 }
 
 .links{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+
   min-width: 140px;
   max-width: 700px;
+}
+.toggleMenu{
+  order: 4;
 }
 .links ul{
   display: -ms-flex;
@@ -114,8 +122,8 @@ header p{
   margin-right: 20px;
 }
 .treugol{
+    order: 5;
     margin-top: 14px;
-    margin-left: -20px;
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -540,20 +548,24 @@ h2{
     text-align: center;
   }
   .links a{
+    font-size: 21px;
     display: block;
     border: 2px solid white;
     text-align: center;
 
   }
   .links ul{
+    top:50px;
     position: absolute;
-    display: none;}
+    display: none;
+  }
   .treugol{
-    margin-top: 0px;
+    margin-top: -47px;
     margin-left: 32px;
   }
   .links img{
-    margin-top:-22px;
+    bottom:62px;
+    left: 75px;
     position: relative;
     cursor: pointer;
   }
